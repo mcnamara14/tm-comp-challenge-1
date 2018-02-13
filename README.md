@@ -6,4 +6,4 @@ This first static comp I decided to go with an Icelandic theme. I used flexbox t
 I tried to create a aesthetically pleasing mobile version of the webpage that allowed for all the buttons and title block to be image as well as the main image through a very different format than the desktop version.
 
 ![static-comp-1-template](images/static-comp-1.jpg "Static Comp 1 Template")
-![static-comp1-personal](images/static-comp-1.png "Static Comp 1 Personal")
+![static-comp1-personal](images/static-comp-1-personal.png "Static Comp 1 Personal")
