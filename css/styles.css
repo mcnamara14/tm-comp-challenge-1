@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mukta Mahee', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: 0 !important;
+}
+/*fonts*/
+h1 {
+    font-size: 3.5vh;
+    letter-spacing: .1vw;
+}
+h2 {
+    font-size: 2vh;
+    height: 3vh;
+    letter-spacing: .1vw;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-weight: 300;
+}
+h3 {
+    font-size: 2vh;
+    text-transform: capitalize;
+    margin-top: 10px;
+    letter-spacing: .1vw;
+    text-transform: uppercase;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    line-height: 175%;
+    font-size: 2vh;
+    font-weight: 300;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  flex-direction: row-reverse;
+}
+
+/*right side*/
+.right-side {
+    width: 40vw;
+    display: flex;
+    height: 100vh;
+    background-image: url(../images/iceland-main-photo.jpg);
+    background-size: cover;
+    align-items: center;
+}
+.slider-arrows {
+    width: 100%;
+    padding: 0 1.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.left-arrow, .right-arrow {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+.left-arrow:hover , .right-arrow:hover {
+    background-color: rgba(0,0,0,0.9);
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    cursor: pointer;    
+}
+.left-arrow span, .right-arrow span {
+    transform: scaleY(2);
+    color: rgba(255, 255, 255, 0.5);
+}
+.slider-dots {
+    width: 47px;
+    position: absolute;
+    padding-top: 5px;
+    top: 8px;
+    right: 11px;
+    display: flex;
+    justify-content: space-around;
+}
+.slider-dots button {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border: 0px;
+}
+button.slider-dot-left {
+    background: #fff;
+}
+
+/*left side*/
+.left-side {
+    display: block;
+    width: 60vw;
+}
+.left-side img {
+    width: 4vw;
+}
+.box {
+    width: 33.4vw;
+    height: 33.4vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box:hover {
+    transition: .5s;
+    cursor: pointer;
+}
+.button {
+    font-size: 2vh;
+    border: 2px solid;
+    float: left;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+    text-align: center;
+    margin-right: 3%;
+    align-items: center;
+    margin-top: 3%;
+}
+.button:hover {
+    background: #456270;
+    transition: .5s;
+}
+.button a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .05vw;
+}
+.box img {
+    height: 4vw;
+}
+.left-side .button img {
+    width: 12%;
+    margin-right: 5%;
+}
+
+.left-side .top-left {
+    width: 66.6vw;
+    background: #5F878F;
+    display: block;
+}
+.title-block-content {
+    display: block;
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+.top-right {
+    background: #8FB151;
+}
+.top-right:hover {
+    box-shadow: inset 0 0 150px #6D873E;
+}
+.top {
+    display: flex;
+    height:33.4vh;
+    width:100%;
+}
+.middle {
+    display: flex;
+}
+.middle-left {
+    background: #CFEB87;
+}
+.middle-left:hover img{
+    content: url(../images/waterfall-icon-animated.gif);
+}
+.middle-left:hover {
+    box-shadow: inset 0 0 150px #A8BF6E;
+
+}
+.middle-right {
+    background: rgba(95, 135, 143, 1.0);
+}
+.middle-right:hover img{
+    content: url(../images/blue-lagoon-animated.gif);
+}
+.middle-right:hover {
+   box-shadow: inset 0 0 150px #4B6A70;
+}
+.bottom {
+    display: flex;
+}
+.bottom-middle {
+    background: #CFEB87;
+}
+.bottom-middle:hover {
+    box-shadow: inset 0 0 150px #A8BF6E;
+}
+.middle-middle {
+    background: #70A788;
+}
+.middle-middle:hover img {
+    content: url(../images/puffin-icon-animated.gif);
+}
+.middle-middle:hover {
+   box-shadow: inset 0 0 150px #567F68;
+}
+.bottom-left {
+    background: #8FB151;
+}
+.bottom-left:hover img {
+    content: url(../images/geysir-icon-animated.gif);
+}
+.bottom-left:hover {
+    box-shadow: inset 0 0 150px #6D873E;
+}
+.bottom-right {
+    background: #456270;
+}
+.bottom-right:hover img {
+    content: url(../images/volcano-icon-animated.gif);
+}
+.bottom-right:hover {
+    box-shadow: inset 0 0 150px #324752;
+}
+
+@media only screen and (max-width: 850px) {
+
+/*fonts*/
+h2 {
+    font-size: 1.8vh;
+}
+h3 {
+    font-size: 1vh;
+    margin-top: 4px;
+}
+
+.container {
+    background-image: url(../images/iceland-main-photo.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: bottom;
+}
+
+/*right side*/
+.right-side {
+    display: none;
+}
+
+/*left side*/
+.left-side, .top, .middle, .bottom {
+    width: 100vw;
+    display: inline;
+}
+.box {
+    width: 30.6%;
+    height: 12.4vh;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    float: left;
+}
+.left-side .top-left {
+    width: 96%;
+    background: rgba(96, 135, 143, 0.6);
+    transition: all 0.9s ease-in-out;
+    height: 33.4vh;
+    margin: 2% 0% 2% 2%;
+    text-align: center;
+}
+.title-block-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 1%;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    width: 20vw;
+}
+.left-side .top-right{
+    float: none;
+    clear: left;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
